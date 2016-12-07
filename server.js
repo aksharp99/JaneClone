@@ -17,7 +17,7 @@ var app = module.exports = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use(express.static(__dirname + '/../public'));
+app.use(express.static(__dirname + '/public'));
 
 //MASSIVE//
 var massiveUrl = 'postgres://localhost/cart';
@@ -142,6 +142,6 @@ function getImages(imageDir, callback) {
   });
 }
 
-app.listen(3333, function() {
-    console.log("Listening on port 3333");
-});
+app.listen(process.env.PORT || 3333, function () {
+   console.log(`listening on port ${this.address().port}`);
+ })
