@@ -1,7 +1,6 @@
 var app = require('../server');
 var db = app.get('db');
 
-console.log(Object.keys(db));
 
 module.exports = {
   getAllProducts:function(req, res, next){
