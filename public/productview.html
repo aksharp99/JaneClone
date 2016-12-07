@@ -1,0 +1,113 @@
+
+<div class="centerthis">
+
+  <div class="leftthumbnail">
+    <!-- <img ng-src="./img/deals/34508.jpg"/> -->
+    <img ng-src="images/deals/{{product.image}}">
+    <div class="yoyo">
+      <div class="title">
+        <div class="titlemargin">
+        <span>{{product.name}}</span>
+       </div>
+       <div class="price">
+         <span>{{product.price}}</span>
+         <span id="greyout">$49.99</span>
+         <div id="favbox">
+           <i class="fa fa-heart-o" aria-hidden="true"></i>
+           <span>2133</span>
+         </div>
+       </div>
+     </div>
+     <div class="truck">
+       <i class="fa fa-truck" aria-hidden="true"></i>
+       <span><em>Seller usually ships within 3 days.</em></span>
+     </div>
+     <!-- <select class="selectstyling">
+
+       <option id="size">Size</option>
+       <option>small</option>
+       <option>medium</option>
+       <option>large</option>
+     </select>
+     <select class="selectstyling">
+
+       <option>Color</option>
+       <option>Brown</option>
+       <option>Black</option>
+     </select> -->
+
+
+       <div id="bag">
+         <input id="qty" placeholder="1" ng-model="quantity"></input>
+
+         <div class="checkout" ng-click="addToBag()"><p>ADD TO BAG</p></div>
+         <div id="ch" class="checkout">
+           <a ui-sref="checkout"><p>CHECKOUT</p></a>
+         </div>
+
+       </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- <div class="lefttext">
+    <div class="discount">
+      <span>55%</span>
+      <span>09:12:50</span>
+      <span>120</span>
+    </div>
+    <div class="discountinfo">
+      <span>YOU SAVE</span>
+      <span>2 DAYS</span>
+      <span>AMT SOLD</span>
+    </div>
+  </div> -->
+
+  <div class="rightthumbnail">
+    <div class="title">
+      <div class="titlemargin">
+      <span>{{product.name}}</span>
+     </div>
+     <div class="price">
+       <span>${{product.price}}</span>
+       <span id="greyout">$49.99</span>
+       <div id="favbox">
+         <i class="fa fa-heart-o" aria-hidden="true"></i>
+         <span>2133</span>
+       </div>
+     </div>
+   </div>
+    <div class="truck">
+      <i class="fa fa-truck" aria-hidden="true"></i>
+      <span><em>Seller usually ships within 3 days.</em></span>
+    </div>
+    <select class="selectstyling">
+
+      <option id="size">Size</option>
+      <option>small</option>
+      <option>medium</option>
+      <option>large</option>
+    </select>
+    <select class="selectstyling">
+
+      <option>Color</option>
+      <option>Brown</option>
+      <option>Black</option>
+    </select>
+
+
+      <div id="bag">
+        <input id="qty" placeholder="1" ng-model="quantity"></input>
+        <div class="checkout" ng-click="addToBag()">
+          <p>ADD TO BAG</p>
+        </div>
+        <div class="checkout">
+          <a ui-sref="checkout"><p>CHECKOUT</p></a>
+        </div>
+      </div>
+
+  </div>
+
+</div>

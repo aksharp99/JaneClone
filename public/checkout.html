@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <div class="cartblock">
+    <div>YOUR CART</div>
+
+    <div>
+      DESCRIPTION
+
+      <span class="rh">PRICE</span>
+      <span class="rh">QTY</span>
+      <span class="rh">NAME</span>
+
+    </div>
+
+    <div ng-repeat="product in allmyproducts">
+      <img id="xyz" ng-src="images/deals/{{product.image}}">
+
+      <span class="rh">${{product.price}}</span>
+      <span class="rh">1 | Edit</span>
+      <span class="rh">{{product.name}}</span>
+    </div>
+
+    <div>
+    Estimated to ship by Fri, Nov 18.
+    <br>
+    Seller usually ships within 4 business days.
+      <span class="rh">{{total | currency}}</span>
+    </div>
+
+    <div>
+      <span class="rh">{{total | currency}}</span>
+      <span class="rh">TOTAL BEFORE TAX</span>
+      <br>
+
+    </div>
+    <div>
+      <span class="rh tot">{{total | currency}}</span>
+      <span class="rh tot">ORDER TOTAL:</span>
+      <button id="checkedout" class="checkout" ng-click="checkout()">COMPLETE ORDER</button>
+    </div>
+  </div>
+
+  <div class="promise">
+    <div>JANE'S PROMISE</div>
+    <div>If you're not absolutely satisfied with your Jane order, we'll make it right or refund your purchase.<strong>Cross our hearts!</strong>
+    <h4>SECURE CHECKOUT</h4>
+    </div>
+    <div>Security at its finest. Braintree + Jane,<br>
+      bringing you safe shopping and a guaranteed
+      smile.
+    </div>
+  </div>
+</div>

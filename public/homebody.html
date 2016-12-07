@@ -1,0 +1,31 @@
+    <div id="landing-page">
+          <div class="banner">
+            <div class="centerbanner">
+              <div class="firstbanner">
+                <a href="http://smart.link/5721391e55b06" target>
+                  <img src="./jane-app-2x.jpg">
+
+                </a>
+
+              </div>
+
+              <div class="secondbanner">
+                <a href="https://jane.com/giveaway"
+                target>
+                  <img src="./giveaway.jpg">
+                </a>
+          </div>
+          </div>
+          <div>
+            <div class="alldeals">
+              <div ng-repeat="image in images">
+                <a ui-sref="productview ({id:image.id})"><img ng-src="images/deals/{{image.image}}"></a>
+              </div>
+            </div>
+
+            <div class="seemore">SEE MORE</div>
+
+            <div class="pagination"></div>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Project</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.css">
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <div class="body-wrapper">
+
+      <nav id="nav-bar">
+        <div id="fixtop" class="topbar">
+          <div class="content">
+            <div class="fl">
+
+              <img id="hamburger" src="./hamburger.png" />
+              <span id="tag">MENU</span>
+              <input id="searchbar" type="search" placeholder="Search..."></input>
+            </div>
+
+              <a id="logo" href="/"></a>
+            <div class="fr">
+              <div class="icon-wrapper favorites">
+                <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+                <span id="favlogo" class="icon-title">FAVORITES</span>
+            </div>
+
+              <div class="icon-wrapper cart-box">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <a ui-sref="checkout"><span id="baglogo" class="icon-title">MY BAG</span></a>
+              </div>
+
+            <div class="icon-wrapper login">
+              <span id="right" class="icon-title">LOGIN</span>
+            </div>
+
+          </div>
+
+
+            </div>
+
+
+            <div id="category-bar" class="scrolled">
+              <div class="j-horizontal-list">
+                <div class="list-wrapper">
+                  <a id="shopby">Shop by Category</a>
+                  <a id="clothing"class="list-item" href="/clothing">Clothing</a>
+                  <a class="list-item" href="/accessories">Accessories</a>
+                  <a class="list-item" href="/home-decor">Home Decor</a>
+                  <a class="list-item" href="/baby">Baby</a>
+                  <a class="list-item" href="/kids">Kids</a>
+                  <a class="list-item" href="/misc">Misc</a>
+                  <a class="list-item" href="/">All Deals</a>
+                  <a class="list-item" href="/new-deals">New Deals</a>
+                  <a class="list-item" href="/ending-soon">Ending Soon</a>
+                  <a id="popular" class="list-item" href="/popular">Popular</a>
+                  <a id="sneak"class="list-item" href="/sneak-peeks">Sneak Peeks</a>
+                  <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+              </div>
+            </div>
+        </div>
+            </nav>
+      </div>
+
+    <ui-view></ui-view>
+
+    <div id="chatty">
+      <button onclick="myFunction()">Questions?</button>
+      </div>
+
+      <div id="myDIV" style="display:none;">
+        <div>Live Support</div>
+        <div>
+          <p>Sorry, we aren't online at the moment. Please visit our Knowledge Base at <a href="https://support.jane.com">https://support.jane.com</a> for answers to some Frequently Asked Questions. You can also leave us a message below.
+            <br>
+            <br>
+          <u>Our Operating Hours</u>
+          <br>
+          <strong>Introduce yourself *</strong>
+          <br>
+          <input class="entertext" type="text" ng-model="entername" placeholder="Name"></input>
+          <br>
+          <br>
+          <input class="entertext" type="text" ng-model="enteremail" placeholder="Email"></input>
+          <br>
+          <br>
+          <strong>Message *</strong>
+          <br>
+          <textarea class="entertext" ng-model="entermessage"></textarea>
+          <br>
+          <button id="sendmessage">Send Message</button>
+        </div>
+        <div></div>
+      </div>
+
+
+    <footer class="end">
+      <div class="leftfooter">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>COMPANY</li>
+                  <li>DEALS</li>
+                  <li>GIVEAWAY</li>
+                  <li>BLOG</li>
+                  <li>SELL WITH JANE</li>
+                  <li>APP</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>HELP & SUPPORT</li>
+                  <li>TERMS OF USE</li>
+                  <li>PRIVACY POLICY</li>
+                  <li>AFFILIATES</li>
+                  <li>SUPPORT</li>
+                  <li>ABOUT</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>NOW HIRING</li>
+                  <li>CAREERS</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/controllers/mainCtrl.js"></script>
+<script src="./js/controllers/productviewCtrl.js"></script>
+<script src="./js/controllers/checkoutCtrl.js"></script>
+<script src="./js/homebodyCtrl.js"></script>
+<script src="./js/services/productService.js"></script>
+<script src="./navscroll.js"></script>
+<script src="./chatbox.js"></script>
+<script src="./chatboxagain.js"></script>
+<script src="./js/services/localStorage.js"></script>
+  </body>
+</html>
